@@ -1,2 +1,2 @@
 # SunnysideAgency
-Landing Page Sunside Agency
+Landing Page Sunnyside Agency
