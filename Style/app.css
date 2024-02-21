@@ -1,0 +1,24 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --prm-yellow: hsl(51, 100%, 49%);
+  --prm-cyan-100: hsl(167, 40%, 24%);
+  --prm-cyan-200: hsl(168, 34%, 41%);
+  --prm-blue: hsl(198, 62%, 26%);
+  --prm-red: hsl(7, 99%, 70%);
+  --ntr-white: hsl(0, 0%, 100%);
+  --ntr-blue-100: hsl(212, 27%, 19%);
+  --ntr-blue-200: hsl(213, 9%, 39%);
+  --ntr-blue-300: hsl(232, 10%, 55%);
+  --ntr-blue-400: hsl(210, 4%, 67%);
+}
+
+html, body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}/*# sourceMappingURL=app.css.map */
