@@ -21,7 +21,7 @@ function testimonialsTemplate(item){
     `
 }
 async function fetchTestimonials(){
-     const getData = await fetch("../data/Testimonials.json")
+     const getData = await fetch("./data/Testimonials.json")
      const data = await getData.json()
      return data
     
