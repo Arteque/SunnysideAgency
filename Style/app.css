@@ -105,9 +105,6 @@ p {
   -webkit-transform-origin: top right;
           transform-origin: top right;
 }
-#main-header nav a {
-  text-shadow: 1px 1px 1px rgba(17, 17, 17, 0.3137254902);
-}
 #main-header nav.show {
   opacity: 1;
   top: 5rem;
@@ -153,9 +150,6 @@ p {
 #main-header nav li.call-to-action a {
   margin-block: unset;
   padding-block: 1rem;
-}
-#main-header nav li:not(.call-to-action) a {
-  mix-blend-mode: color-burn;
 }
 @media screen and (min-width: 950px) {
   #main-header .burger-container, #main-header .burger-container.show {
@@ -207,6 +201,9 @@ p {
   }
   #main-header nav ul .call-to-action:hover a, #main-header nav.show ul .call-to-action:hover a {
     color: var(--ntr-white);
+  }
+  #main-header nav ul a, #main-header nav.show ul a {
+    text-shadow: 1px 1px 1px rgba(17, 17, 17, 0.3137254902);
   }
 }
 
