@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Media/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style/app.css">
     <link rel="stylesheet" href="Style/app.css.map">
-    <title>Sunnyside Agency</title>
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 </head>
 <body>
+<!--Main Title-->
     <h1 class="hide-it">Sunnyside Angency</h1>
-    <!-- Main Header -->
+<!-- Main Header -->
     <header id="main-header">
         <div class="wrapper">
-            <div class="logo-container"></div>
+            <div class="logo-container">
+                <img src="./Media/logo.svg" alt="Sunnyside logo">
+            </div>
+            <div class="burger-container">
+                <img src="./Media/icon-hamburger.svg" alt="">
+            </div>
             <nav class="main-nav-container">
-                <ul>
+                <ul class="main-nav">
                     <li>
                         <a href="#">
                             About
@@ -49,14 +61,166 @@
             <section id="hero-section">
                 <div class="wrapper">
                     <h2>
-                        We are creatives
+                        <span>
+                            We are
+                        </span> creatives
                     </h2>
+                    <div class="arrow-down">
+                        <img src="./Media/icon-arrow-down.svg" alt="Scroll Down">
+                    </div>
                 </div>
             </section>
 
-            <!--  -->
+            <!-- Brand -->
+            <section id="brand-section" class="image-text">
+                <div class="col">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="./Media/desktop/image-transform.jpg">
+                        <img src="./Media/mobile/image-transform.jpg" alt="Transform your brand">
+                    </picture>
+                </div>
+                <div class="wrapper col">
+                    <h2>Transform your brand</h2>
+                    <p>
+                        We are a full-service creative agency specializing in helping brands grow fast. 
+                        Engage your clients through compelling visuals that do most of the marketing for you.
+                    </p>
+                    <div class="call-to-action">
+                        <a href="">learn more</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--Audience-->
+            <section id="audience-section" class="image-text">
+                <div class="col">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="./Media/desktop/image-stand-out.jpg">
+                        <img src="./Media/mobile/image-stand-out.jpg" alt="Stand out">
+                    </picture>
+                </div>
+                <div class="wrapper col">
+                    <h2>  Stand out to the right audience</h2>
+                    <p>
+                        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+                    </p>
+                    <div class="call-to-action red">
+                        <a href="">learn more</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--Graphic Design-->
+            <section id="graphic-section">
+                <div class="col">
+                    <figure>
+                        <picture>
+                            <source media="(min-width: 800px)" srcset="./Media/desktop/image-graphic-design.jpg">
+                            <img src="./Media/mobile/image-graphic-design.jpg" alt="Graphic Design">
+                        </picture>
+                        <figcaption class="wrapper">
+                            <h2>Graphic design</h2>
+                            <p>
+                                Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    
+                </div>
+                <div class="col">
+                    <figure>
+                        <picture>
+                            <source media="(min-width: 800px)" srcset="./Media/desktop/image-photography.jpg">
+                            <img src="./Media/mobile/image-photography.jpg" alt="Graphic Design">
+                        </picture>
+                        <figcaption class="wrapper">
+                            <h2>Photography</h2>
+                            <p>
+                                Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!--Testimonial-->
+            <section id="testimonials-section">
+                <div class="wrapper">
+                    <header class="section-header">
+                       <h2>Client testimonials</h2>
+                    </header>
+                    <div class="contents">
+                        <!--Content injected by App.js via JSON FILE data/Testimonial.json-->
+                    </div>
+                </div>
+            </section>
+
+            <!--Image Galery-->
+            <section id="images-section">
+                    <div class="col">
+                        <picture>
+                            <source srcset="./Media/desktop/image-gallery-milkbottles.jpg" media="(min-width: 800px)" >
+                            <img src="./Media/mobile/image-gallery-milkbottles.jpg" alt="Milkbottles">
+                        </picture>
+
+                        <picture>
+                            <source srcset="./Media/desktop/image-gallery-orange.jpg" media="(min-width:800px)">
+                            <img src="./Media/mobile/image-gallery-orange.jpg" alt="Orange">
+                        </picture>
+                    </div>
+                    <div class="col">
+                        <picture>
+                            <source srcset="./Media/desktop/image-gallery-cone" media="(min-width: 800px)" >
+                            <img src="./Media/mobile/image-gallery-cone.jpg" alt="Cone">
+                        </picture>
+
+                        <picture>
+                            <source srcset="./Media/desktop/image-gallery-sugar-cubes.jpg" media="(min-width:800px)">
+                            <img src="./Media/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar cubes">
+                        </picture>
+                    </div>
+            </section>
         </article>
     </main>
+
+<!--Main Footer-->   
+    <footer id="main-footer">
+        <div class="logo-coontainer">
+            <img src="./Media/logo.svg" alt="Sunnyside Main Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Projects</a></li>
+            </ul>
+        </nav>
+        <div class="socials-container">
+            <ul>
+                <li><a href=""><img src="./Media/icon-facebook.svg" alt="Facebook"></a></li>
+                <li><a href=""><img src="./Media/icon-instagram.svg" alt="Instagram"></a></li>
+                <li><a href=""><img src="./Media/icon-twitter.svg" alt="Twitter"></a></li>
+                <li><a href=""><img src="./Media/icon-pinterest.svg" alt="Pinterest"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+<!--Attributions-->
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
+        Coded by <a href="https://artecke.de" target="_blank" rel="noopener noreferrer">Ahmed Lemssiah</a>.
+      </div>
     <script src="Script/App.js"></script>
+
+    <script>
+        //Nav Mobile
+        const burgerContainer = document.querySelector(".burger-container")
+        const navContainer = document.querySelector(".main-nav-container")
+
+        burgerContainer.addEventListener("click", (e) => {
+            e.preventDefault()
+            navContainer.classList.toggle("show")
+        })
+    </script>
 </body>
 </html>
